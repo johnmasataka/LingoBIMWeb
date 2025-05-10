@@ -13,11 +13,11 @@
     <header>
         <nav>
             <ul>
-                <li><a href="index.html" data-key="home">Home</a></li>
-                <li><a href="about.html" data-key="about">About</a></li>
-                <li><a href="contact.html" data-key="contact">Contact</a></li>
+                <li><a href="https://johnmasataka.github.io/WorkAtGSAPP/" data-key="home">Home</a></li>
+                <li><a href="https://johnmasataka.github.io/WorkAtGSAPP/about.html" data-key="about">About</a></li>
+                <li><a href="https://johnmasataka.github.io/WorkAtGSAPP/contact.html" data-key="contact">Contact</a></li>
                 <li><a href="map.html" data-key="map">Map</a></li>
-                <li><a href="work.html" data-key="work">Work</a></li>
+                <li><a href="https://johnmasataka.github.io/WorkAtGSAPP/work.html" data-key="work">Work</a></li>
                 <li><a href="https://www.instagram.com/jjjhiker/" target="_blank" data-key="instagram">Instagram</a></li>
                 <li><a href="https://www.linkedin.com/in/johnmasataka-xianfeng-jiang/" target="_blank" data-key="linkedin">LinkedIn</a></li>
             </ul>
@@ -48,153 +48,402 @@
             </div>
         </section>
 
-        <section class="context-story" id="contextContent">
-            <div class="context-section global-challenge">
-                <div class="context-content">
-                    <h2 data-key="globalChallenge">Global Construction Challenge</h2>
-                    <div class="statistics-container">
-                        <div class="statistic-item">
-                            <div class="statistic-number" data-target="9800000000">0</div>
-                            <div class="statistic-label">Billion People by 2050</div>
-                        </div>
-                        <div class="statistic-item">
-                            <div class="statistic-number" data-target="13000">0</div>
-                            <div class="statistic-label">New Buildings Needed Daily</div>
-                        </div>
-                        <div class="statistic-item">
-                            <div class="statistic-number" data-target="5000">0</div>
-                            <div class="statistic-label">Daily Construction Gap</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="tab-navigation">
+            <button class="tab-button active" data-tab="story" style="font-family: 'Lexend', sans-serif; padding: 12px 30px; border: 2px solid #333; border-radius: 6px; background: #333; color: white; font-weight: 500; cursor: pointer; transition: all 0.3s ease; margin-right: 10px;">Story</button>
+            <button class="tab-button" data-tab="paper" style="font-family: 'Lexend', sans-serif; padding: 12px 30px; border: 2px solid #333; border-radius: 6px; background: transparent; color: #333; font-weight: 500; cursor: pointer; transition: all 0.3s ease;">Paper</button>
+        </div>
 
-            <div class="context-section challenge-details">
-                <div class="challenge-grid">
-                    <div class="challenge-item">
-                        <div class="challenge-icon">🌍</div>
-                        <h3>Resource Constraints</h3>
-                        <p>Limited industry expertise and financial resources in developing regions</p>
-                    </div>
-                    <div class="challenge-item">
-                        <div class="challenge-icon">⚡</div>
-                        <h3>Efficiency Issues</h3>
-                        <p>Traditional construction methods struggle to meet demand</p>
-                    </div>
-                    <div class="challenge-item">
-                        <div class="challenge-icon">🔧</div>
-                        <h3>Technical Barriers</h3>
-                        <p>Complex BIM workflows require significant expertise</p>
-                    </div>
-                </div>
-            </div>
+        <section class="tab-content active" id="story-tab">
+            <div class="context-story" id="contextContent">
+                <div class="context-section global-challenge">
+                    <div class="context-content">
+                        <h2 data-key="globalChallenge">Global Construction Challenge</h2>
+                        <div class="story-timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <h3>Population Growth</h3>
+                                    <div class="statistic-item" data-visible="false">
+                                        <div class="statistic-number" data-target="9700000000">0</div>
+                                        <div class="statistic-label">People by 2050</div>
+                                    </div>
+                                    <p>According to the United Nations, the rapid growth of the global population presents unprecedented challenges and opportunities for the architecture, engineering, and construction industry.</p>
+                                </div>
+                            </div>
 
-            <div class="context-section solution-path">
-                <div class="solution-timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h3>BIM Revolution</h3>
-                            <p>Centralized platform for design, analysis, and management</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h3>AI Integration</h3>
-                            <p>Generative AI simplifies complex workflows</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h3>Natural Language Interface</h3>
-                            <p>LLMs bridge the gap between intent and execution</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <h3>Construction Demand</h3>
+                                    <div class="statistic-item" data-visible="false">
+                                        <div class="statistic-number" data-target="13000">0</div>
+                                        <div class="statistic-label">New Buildings Needed Daily</div>
+                                    </div>
+                                    <p>This demand is most acute in Africa, where 13,000 new buildings will be needed daily to accommodate the burgeoning population.</p>
+                                </div>
+                            </div>
 
-            <div class="context-section opportunity">
-                <div class="opportunity-content">
-                    <h2>New Opportunity</h2>
-                    <p>By integrating LLMs with BIM, we can:</p>
-                    <ul class="opportunity-list">
-                        <li>Reduce technical barriers to BIM adoption</li>
-                        <li>Enable intuitive interaction with BIM tools</li>
-                        <li>Accelerate construction in resource-constrained regions</li>
-                        <li>Meet global construction demand sustainably</li>
-                    </ul>
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <h3>Current Gap</h3>
+                                    <div class="statistic-item" data-visible="false">
+                                        <div class="statistic-number" data-target="3600">0</div>
+                                        <div class="statistic-label">Daily Construction Shortage</div>
+                                    </div>
+                                    <p>However, according to our current speed, we still have a significant shortage in meeting this demand.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stats-to-challenges">
+                    <div class="transition-message">
+                        <div class="transition-icon">📊</div>
+                        <h3>Understanding the Impact</h3>
+                        <p>These numbers reveal three critical challenges we must address</p>
+                    </div>
+                    <div class="transition-arrow">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 5v14M7 12l5 5 5-5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="context-section challenge-details">
+                    <div class="challenge-grid">
+                        <div class="challenge-item">
+                            <div class="challenge-icon">🌍</div>
+                            <h3>Resource Constraints</h3>
+                            <p>Limited industry expertise and financial resources in developing regions</p>
+                        </div>
+                        <div class="challenge-item">
+                            <div class="challenge-icon">⚡</div>
+                            <h3>Efficiency Issues</h3>
+                            <p>Traditional construction methods struggle to meet demand</p>
+                        </div>
+                        <div class="challenge-item">
+                            <div class="challenge-icon">🔧</div>
+                            <h3>Technical Barriers</h3>
+                            <p>Complex BIM workflows require significant expertise</p>
+                        </div>
+                    </div>
+                    <div class="challenge-to-stats">
+                        <div class="connecting-line"></div>
+                        <div class="transition-text">These challenges lead to significant gaps in meeting global construction needs</div>
+                        <div class="connecting-arrow">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 5v14M7 12l5 5 5-5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="context-section bim-context">
+                    <h2 style="text-align: center;">BIM: A Transformative Tool</h2>
+                    <div class="bim-content">
+                        <div class="bim-intro">
+                            <div class="positive-aspect">
+                                <div class="icon-wrapper">
+                                    <span class="icon">✨</span>
+                                </div>
+                                <p>Today, Building Information Modeling (BIM) has emerged as a transformative tool, providing a centralized platform to design, analyze, and manage built assets.</p>
+                            </div>
+                            
+                            <div class="however-transition">
+                                <div class="transition-left">
+                                    <!-- <div class="transition-icon">🏗️</div>
+                                    <div class="transition-text">Potential</div> -->
+                                </div>
+                                <div class="transition-center">
+                                    <div class="transition-arrow">
+                                        <!-- <svg viewBox="0 0 100 100">
+                                            <path d="M10,50 L90,50 M70,30 L90,50 L70,70" stroke="currentColor" fill="none" stroke-width="4"/>
+                                        </svg> -->
+                                    </div>
+                                    <div class="however-text">However</div>
+                                </div>
+                                <div class="transition-right">
+                                    <!-- <div class="transition-icon">🔒</div>
+                                    <div class="transition-text">Barriers</div> -->
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bim-challenges">
+                            <div class="challenge-card">
+                                <div class="challenge-icon">🎓</div>
+                                <h3>Complex Workflows</h3>
+                                <p>BIM workflows remain complex, requiring significant expertise to bridge design intent with software execution.</p>
+                            </div>
+                            <div class="challenge-card">
+                                <div class="challenge-icon">🌍</div>
+                                <h3>Adoption Barriers</h3>
+                                <p>This complexity gap hinders BIM's widespread adoption in resource-constrained regions.</p>
+                            </div>
+                            <div class="challenge-card">
+                                <div class="challenge-icon">📊</div>
+                                <h3>Impact on Numbers</h3>
+                                <p>These barriers directly affect our ability to meet the growing demand for construction, contributing to the daily shortage of 3,600 buildings.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="context-section solution-path">
+                    <div class="solution-transition">
+                        <div class="transition-left">
+                            <!-- <div class="transition-icon">🔍</div>
+                            <div class="transition-text">Challenges</div> -->
+                        </div>
+                        <div class="transition-center">
+                            <div class="transition-arrow">
+                                <!-- <svg viewBox="0 0 100 100">
+                                    <path d="M10,50 L90,50 M70,30 L90,50 L70,70" stroke="currentColor" fill="none" stroke-width="4"/>
+                                </svg> -->
+                            </div>
+                            <div class="however-text">Our Solution</div>
+                        </div>
+                        <div class="transition-right">
+                            <!-- <div class="transition-icon">💡</div>
+                            <div class="transition-text">Innovation</div> -->
+                        </div>
+                    </div>
+                    <div class="solution-timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h3 style="text-align: center;">BIM Revolution</h3>
+                                <p style="text-align: center;">Centralized platform for design, analysis, and management</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h3 style="text-align: center;">AI Integration</h3>
+                                <p style="text-align: center;">Generative AI simplifies complex workflows</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h3 style="text-align: center;">Natural Language Interface</h3>
+                                <p style="text-align: center;">LLMs bridge the gap between intent and execution</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="context-section system-architecture">
+                    <h2 style="text-align: center; margin-bottom: 2rem;">System Architecture</h2>
+                    <div class="model-showcase">
+                        <img src="./images/20250315_Figure 1_3_Bold_01.jpg" alt="System Architecture Diagram" class="workflow-image" style="width: 80%; max-width: 800px; margin: 0 auto; display: block;">
+                    </div>
+                </div>
+
+                <div class="context-section workflow">
+                    <div class="workflow-transition">
+                        <div class="transition-left">
+                            <!-- <div class="transition-icon">🎯</div>
+                            <div class="transition-text">Goals</div> -->
+                        </div>
+                        <div class="transition-center">
+                            <div class="transition-arrow">
+                                <!-- <svg viewBox="0 0 100 100">
+                                    <path d="M10,50 L90,50 M70,30 L90,50 L70,70" stroke="currentColor" fill="none" stroke-width="4"/>
+                                </svg> -->
+                            </div>
+                            <div class="however-text">Product Workflow</div>
+                        </div>
+                        <div class="transition-right">
+                            <!-- <div class="transition-icon">⚡</div>
+                            <div class="transition-text">Process</div> -->
+                        </div>
+                    </div>
+                    <div class="workflow-steps">
+                        <div class="workflow-step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h3>Identifying Project Site</h3>
+                                <p>Like in real design workflows, we start by identifying the project site.<br>
+                                In New York, we can use public databases like Zola or Open Data to find land lot information using street addresses.<br>
+                                By using their API, we can retrieve a shapefile and import it into our tool.</p>
+                                <img src="./images/lingobim-workflow1.png" alt="Site Analysis Workflow" class="workflow-image">
+                            </div>
+                        </div>
+                        <div class="workflow-step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h3>Site Boundary Modeling in Revit</h3>
+                                <p>In the Modeling Class, the tool builds site boundary lines in Revit using the Revit API.<br>
+                                Currently, these lines are placed at the (0,0,0) point in Revit, not at a real-world location.<br>
+                                The site boundary data is then stored in a variable and sent to GPT via the backend server.</p>
+                                <img src="./images/lingobim-workflow2.png" alt="Requirements Input Workflow" class="workflow-image">
+                            </div>
+                        </div>
+                        <div class="workflow-step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h3>Generating the Building Model</h3>
+                                <p>Next, users input the project description in natural language in the User Interaction Class.<br>
+                                This input is stored in the AI Processing Class and sent to GPT via the backend server.<br>
+                                GPT extracts keywords and converts them into the predefined JSON format.</p>
+                                <img src="./images/lingobim-workflow3.png" alt="AI Analysis Workflow" class="workflow-image">
+                            </div>
+                        </div>
+                        <div class="workflow-step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h3>Checking Zoning Codes and Modeling</h3>
+                                <p>GPT performs two main tasks:</p>
+                                <p>First, it checks zoning codes - a complex process due to varying regulations and multiple possible solutions. For this study, we focused on specific zoning factors including setbacks, height limits, and lot coverage. The backend sends GPT a structured query: "We have this site, this project, and these conditions. Can you generate the best solution? Convert the parameters into JSON format and return only the result."</p>
+                                <p>Second, it generates models based on the JSON data, which is then used with the Revit API to create the final model in Revit.</p>
+                                <img src="./images/lingobim-workflow4.png" alt="Performance Analysis Workflow" class="workflow-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="context-section generated-model">
+                    <h2 style="text-align: center;">Workflow Overview</h2>
+                    <div class="model-showcase">
+                        <img src="./images/20250227_Columbia AI Summit_Poster_01 copy.jpg" alt="Columbia AI Summit Poster" class="workflow-image" style="width: 100%; max-width: 100%; margin: 0; padding: 0;">
+                    </div>
+                </div>
+
+                <!-- <div class="context-section conclusion">
+                    <h2 style="text-align: center;">Workflow</h2>
+                    <div class="conclusion-grid"> -->
+                        <!-- <div class="conclusion-item">
+                            <h3>Accuracy Enhancement</h3>
+                            <p>LLM-driven BIM shows promise but requires further refinement to meet professional standards</p>
+                        </div>
+                        <div class="conclusion-item">
+                            <h3>Algorithm Advancement</h3>
+                            <p>Modeling algorithms need to evolve to handle complex design specifications</p>
+                        </div>
+                        <div class="conclusion-item">
+                            <h3>Workflow Development</h3>
+                            <p>Essential to develop more sophisticated and professional workflows</p>
+                        </div>
+                        <div class="conclusion-item">
+                            <h3>Efficiency Optimization</h3>
+                            <p>Exploring smaller language models could increase system efficiency</p>
+                        </div> -->
+                        <!-- <img src="./images/20241229_Generated Models_1.tif" alt="Columbia AI Summit Poster" class="workflow-image" style="width: 100%; max-width: 100%; margin: 0; padding: 0;">
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="context-section generated-model">
+                <h2 style="text-align: center;">Generated Model</h2>
+                <br>
+                <div class="model-showcase">
+                    <img src="./images/20241229_Generated Models_1.jpg" alt="Generated Model Visualization" class="workflow-image" style="width: 80%; max-width: 800px; margin: 0 auto; display: block;">
+
                 </div>
             </div>
+        </div>
+        
+        <div class="context-section video-demo">
+            <h2 style="text-align: center;">Demo Video</h2>
+            <div class="video-container">
+                <div style="text-align: center; display: flex; justify-content: center; align-items: center;">
+                    <iframe src="https://www.youtube.com/embed/KHmqNCpCqMI" frameborder="0" allowfullscreen style="width: 100%; height: 500px; max-width: 800px;"></iframe>
+                </div>
+            </div>
+        </div>
         </section>
 
-        <section class="project-story" id="projectContent">
-            <div class="story-section">
-                <h2 data-key="overview">Project Overview</h2>
-                <p data-key="overviewText">The emergence of large language models (LLMs) has introduced innovative workflows in the architecture, engineering, and construction (AEC) Industry. While Building Information Modeling (BIM) has been widely adopted, the integration of LLMs with BIM remains in its infancy and has not yet been actively involved in the full lifecycle of architectural project design. Moreover, BIM's inherent complexity and the expertise required for its effective usage pose significant barriers for designers, particularly in resource-constrained regions with limited training and financial capacity. While prior studies have explored applications of natural language processing (NLP) in certain design procedures, these efforts remain fragmented, addressing only isolated aspects of the whole architectural workflow. To bridge this gap, this study proposes a comprehensive methodology that integrates LLMs and BIM technologies to create a full lifecycle architectural design framework. The goal of this study is to demonstrate the potential of LLMs to simplify BIM tools and optimize end-to-end design workflows. </p>
-                <div class="project-details">
-                    <p data-key="projectDuration"><strong>Duration:</strong> August 2024 - November 2024</p>
-                    <p data-key="projectTeam"><strong>Team:</strong> John Masataka Xianfeng Jiang</p>
-                    <p data-key="projectAdvisors"><strong>Advisors:</strong> Prof. <a href="https://datascience.columbia.edu/people/laura-kurgan/" target="_blank" style="color: inherit;">Laura Kurgan</a> (Columbia University), <a href="https://snoweriazhang.github.io/index.html" target="_blank" style="color: inherit;">Snoweria Zhang</a> (Delve Google)</p>
+        <section class="tab-content" id="paper-tab">
+            <div class="project-story" id="projectContent">
+                <div class="story-section">
+                    <h2 data-key="overview">Project Overview</h2>
+                    <p data-key="overviewText">The emergence of large language models (LLMs) has introduced innovative workflows in the architecture, engineering, and construction (AEC) Industry. While Building Information Modeling (BIM) has been widely adopted, the integration of LLMs with BIM remains in its infancy and has not yet been actively involved in the full lifecycle of architectural project design. Moreover, BIM's inherent complexity and the expertise required for its effective usage pose significant barriers for designers, particularly in resource-constrained regions with limited training and financial capacity. While prior studies have explored applications of natural language processing (NLP) in certain design procedures, these efforts remain fragmented, addressing only isolated aspects of the whole architectural workflow. To bridge this gap, this study proposes a comprehensive methodology that integrates LLMs and BIM technologies to create a full lifecycle architectural design framework. The goal of this study is to demonstrate the potential of LLMs to simplify BIM tools and optimize end-to-end design workflows. </p>
+                    <div class="project-details">
+                        <p data-key="projectDuration"><strong>Duration:</strong> August 2024 - November 2024</p>
+                        <p data-key="projectTeam"><strong>Team:</strong> John Masataka Xianfeng Jiang</p>
+                        <p data-key="projectAdvisors"><strong>Advisors:</strong> Prof. <a href="https://datascience.columbia.edu/people/laura-kurgan/" target="_blank" style="color: inherit;">Laura Kurgan</a> (Columbia University), <a href="https://snoweriazhang.github.io/index.html" target="_blank" style="color: inherit;">Snoweria Zhang</a> (Delve Google)</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="story-section">
-                <h2 data-key="challenge">Introduction</h2>
-                <p data-key="challengeText">BIM has become an important tool for modern architectural practices, offering crucial functionalities for modeling, visualization, coordination, and lifecycle management. However, due to its complexity, steep learning curve, and lack of standards (Muhammad et al. 2021), BIM still presents challenges in the architectural design workflow. These challenges are especially pronounced in regions with limited access to specialized training and financial resources, leading to disparities in BIM's adoption and usage. </p>
-                <p data-key="challengeText">On the other hand, LLMs have demonstrated immense potential in the AEC industries, including assisting with complex design tasks, streamlining communication between various stakeholders, processing data-driven decision-making, and simplifying project management (Eloundou et al. 2023). Current research and industrial applications primarily focus on the integration of NLP tools within specific aspects of design workflows (Du et al. 2024), including interpretation of building regulations (Fuchs et al. 2023), and enhancing building layout optimization (Alavi et al. 2024). However, these implementations remain fragmented and lack a comprehensive approach that covers the full lifecycle of an architectural project, thus they are not able to serve the complete architectural design process in a practical application. </p>
-                <p data-key="challengeText">In addition, foundational research in AEC automation has explored rule-based and ontology-driven methods to enhance BIM interoperability and compliance verification. They have been widely investigated to formalize regulatory constraints and facilitate automated compliance assessment (Pauwels et al. 2017). These approaches enable machine-readable representations of zoning laws and building codes, allowing for efficient regulatory validation in BIM environments. Furthermore, semantic BIM querying frameworks (Yin et al. 2023) have demonstrated the potential to enhance information retrieval and design validation by enabling natural language-based model interrogation. Despite these advancements, existing solutions often require significant manual input for rule definition and adaptation, limiting their accessibility for non-expert users. </p>
-                <p data-key="challengeText">To address these limitations, this study proposes a method that integrates LLM and BIM to enhance design workflow, primarily focusing on the case of the apartment building. </p>
-            </div>
+                <div class="story-section">
+                    <h2 data-key="challenge">Introduction</h2>
+                    <p data-key="challengeText">BIM has become an important tool for modern architectural practices, offering crucial functionalities for modeling, visualization, coordination, and lifecycle management. However, due to its complexity, steep learning curve, and lack of standards (Muhammad et al. 2021), BIM still presents challenges in the architectural design workflow. These challenges are especially pronounced in regions with limited access to specialized training and financial resources, leading to disparities in BIM's adoption and usage. </p>
+                    <p data-key="challengeText">On the other hand, LLMs have demonstrated immense potential in the AEC industries, including assisting with complex design tasks, streamlining communication between various stakeholders, processing data-driven decision-making, and simplifying project management (Eloundou et al. 2023). Current research and industrial applications primarily focus on the integration of NLP tools within specific aspects of design workflows (Du et al. 2024), including interpretation of building regulations (Fuchs et al. 2023), and enhancing building layout optimization (Alavi et al. 2024). However, these implementations remain fragmented and lack a comprehensive approach that covers the full lifecycle of an architectural project, thus they are not able to serve the complete architectural design process in a practical application. </p>
+                    <p data-key="challengeText">In addition, foundational research in AEC automation has explored rule-based and ontology-driven methods to enhance BIM interoperability and compliance verification. They have been widely investigated to formalize regulatory constraints and facilitate automated compliance assessment (Pauwels et al. 2017). These approaches enable machine-readable representations of zoning laws and building codes, allowing for efficient regulatory validation in BIM environments. Furthermore, semantic BIM querying frameworks (Yin et al. 2023) have demonstrated the potential to enhance information retrieval and design validation by enabling natural language-based model interrogation. Despite these advancements, existing solutions often require significant manual input for rule definition and adaptation, limiting their accessibility for non-expert users. </p>
+                    <p data-key="challengeText">To address these limitations, this study proposes a method that integrates LLM and BIM to enhance design workflow, primarily focusing on the case of the apartment building. </p>
+                </div>
 
-            <div class="story-section">
-                <h2 data-key="solution">Methodology</h2>
-                <p data-key="solutionText">This study proposes a framework that leverages the capabilities of an LLM, specifically ChatGPT-4.0, to streamline multiple stages of the architectural design workflow within a BIM environment using Autodesk Revit 2024.</p>
-                <p data-key="solutionText">The framework is developed in C# and consists of three primary classes: (1) user interaction, where users input prompts through a graphical user interface (GUI) implemented in Windows Presentation Foundation; (2) AI processing, where user input is formatted, sent to a backend server, and processed through LLM; and (3) modeling, where BIM elements are built in Revit using the Revit API. In addition, A Flask-based backend server developed in Python communicates between the C# application and OpenAI API, handling requests and returning structured responses in JSON format (Figure 1).</p>
-                <p data-key="solutionText">To standardize data representation, a JSON schema was designed to encapsulate an apartment building's attributes (Figure 2). The schema includes hierarchical data elements, starting from fundamental building parameters (e.g., program, dimensions) and extending to detailed components such as facades, roofs, slabs, materials, and levels. Upon system initialization, this structured JSON format is transmitted to ChatGPT with an instruction: "This is a JSON dataset representing an apartment building. Please retain its structure. Subsequent inputs will provide updated parameters, and your task is to modify the dataset accordingly. Do not provide any additional textual responses."</p>
-                <p data-key="solutionText">The workflow begins with the acquisition of site boundary data, initiated by the user input of a project site address. A local database API retrieves parcel information, and in the case of New York City, this data is sourced from NYC Open Data, specifically the MapPLUTO dataset, which contains lot boundaries, zoning attributes, and land use information. The dataset, provided in Shapefile format, is processed using Python's geopandas library. The shapefile is filtered using Borough, Block, and Lot (BBL) identifiers to extract the precise site boundary. In this process, GIS site coordinates (EPSG:2263) are converted to Revit's internal coordinate system. The extracted geometric data is then reconstructed as a ModelCurve using the Revit API, allowing the site boundary to be accurately represented within the Revit modeling environment. </p>
-                <p data-key="solutionText">Subsequently, users input project descriptions in the textbox on the GUI, detailing aspects such as gross floor area, floor height, and material selection. These descriptions are stored as the variable ProjectDescription. Simultaneously, users select all boundary lines within the Revit interface. Once selected, the geometric data of these lines is stored in the variable SiteBoundary. </p>
-                <p data-key="solutionText">To incorporate zoning constraints, the system retrieves text data from a local zoning code database (NYC Zoning Resolution) using Scrapy in Python. In this study, a simplified set of regulations is used, focusing on parameters such as front wall setback, maximum height limitation, and lot coverage. Extracted zoning information is stored in the variable ZoningRegulations.</p>
-                <p data-key="solutionText">In the backend server, these three variables (ProjectDescription, SiteBoundary, and ZoningRegulations) are transmitted to LLM with an additional instruction: "Generate a building model based on the description in ProjectDescription within the defined geometry in SiteBoundary. Ensure compliance with the constraints specified in ZoningRegulations. The output should adhere to the predefined JSON schema, and no additional text responses should be provided."</p>
-                <p data-key="solutionText">ChatGPT first drafts an initial building representation in JSON format based on the predefined schema. It then analyzes the zoning constraints and modifies the model accordingly. For instance, an initial iteration may generate a building occupying the entire site, but a subsequent update reduces the footprint to comply with the required site occupation ratio and adds additional levels to meet gross floor area requirements. If conflicts arise, such as a scenario where compliance with one constraint (e.g., maximum building height) would lead to a violation of another (e.g., lot coverage limit), ChatGPT returns an error message and prevents further processing.</p>
-                <p data-key="solutionText">Once the final JSON representation is generated, the structured data is returned via the Flask-based backend to the C# application. The C# application then processes the JSON data and utilizes the Revit API to generate the corresponding BIM elements. </p>
-            </div>
+                <div class="story-section">
+                    <h2 data-key="solution">Methodology</h2>
+                    <p data-key="solutionText">This study proposes a framework that leverages the capabilities of an LLM, specifically ChatGPT-4.0, to streamline multiple stages of the architectural design workflow within a BIM environment using Autodesk Revit 2024.</p>
+                    <p data-key="solutionText">The framework is developed in C# and consists of three primary classes: (1) user interaction, where users input prompts through a graphical user interface (GUI) implemented in Windows Presentation Foundation; (2) AI processing, where user input is formatted, sent to a backend server, and processed through LLM; and (3) modeling, where BIM elements are built in Revit using the Revit API. In addition, A Flask-based backend server developed in Python communicates between the C# application and OpenAI API, handling requests and returning structured responses in JSON format (Figure 1).</p>
+                    <div class="model-showcase" style="margin: 2rem 0;">
+                        <img src="./images/20250315_Figure 1_3_Bold_01.jpg" alt="Workflow Chart" class="workflow-image" style="width: 80%; max-width: 800px; margin: 0 auto; display: block;">
+                        <p style="text-align: center; margin-top: 1rem; font-style: italic;">Figure 1. Workflow Chart.</p>
+                    </div>
+                    <p data-key="solutionText">To standardize data representation, a JSON schema was designed to encapsulate an apartment building's attributes (Figure 2). The schema includes hierarchical data elements, starting from fundamental building parameters (e.g., program, dimensions) and extending to detailed components such as facades, roofs, slabs, materials, and levels. Upon system initialization, this structured JSON format is transmitted to ChatGPT with an instruction: "This is a JSON dataset representing an apartment building. Please retain its structure. Subsequent inputs will provide updated parameters, and your task is to modify the dataset accordingly. Do not provide any additional textual responses."</p>
+                    <div class="model-showcase" style="margin: 2rem 0;">
+                        <img src="./images/20250315_JSON_2_01.jpg" alt="JSON Schema" class="workflow-image" style="width: 80%; max-width: 800px; margin: 0 auto; display: block;">
+                        <p style="text-align: center; margin-top: 1rem; font-style: italic;">Figure 2. Predefined JSON Schema (Excerpted).</p>
+                    </div>
+                    <p data-key="solutionText">The workflow begins with the acquisition of site boundary data, initiated by the user input of a project site address. A local database API retrieves parcel information, and in the case of New York City, this data is sourced from NYC Open Data, specifically the MapPLUTO dataset, which contains lot boundaries, zoning attributes, and land use information. The dataset, provided in Shapefile format, is processed using Python's geopandas library. The shapefile is filtered using Borough, Block, and Lot (BBL) identifiers to extract the precise site boundary. In this process, GIS site coordinates (EPSG:2263) are converted to Revit's internal coordinate system. The extracted geometric data is then reconstructed as a ModelCurve using the Revit API, allowing the site boundary to be accurately represented within the Revit modeling environment. </p>
+                    <p data-key="solutionText">Subsequently, users input project descriptions in the textbox on the GUI, detailing aspects such as gross floor area, floor height, and material selection. These descriptions are stored as the variable ProjectDescription. Simultaneously, users select all boundary lines within the Revit interface. Once selected, the geometric data of these lines is stored in the variable SiteBoundary. </p>
+                    <p data-key="solutionText">To incorporate zoning constraints, the system retrieves text data from a local zoning code database (NYC Zoning Resolution) using Scrapy in Python. In this study, a simplified set of regulations is used, focusing on parameters such as front wall setback, maximum height limitation, and lot coverage. Extracted zoning information is stored in the variable ZoningRegulations.</p>
+                    <p data-key="solutionText">In the backend server, these three variables (ProjectDescription, SiteBoundary, and ZoningRegulations) are transmitted to LLM with an additional instruction: "Generate a building model based on the description in ProjectDescription within the defined geometry in SiteBoundary. Ensure compliance with the constraints specified in ZoningRegulations. The output should adhere to the predefined JSON schema, and no additional text responses should be provided."</p>
+                    <p data-key="solutionText">ChatGPT first drafts an initial building representation in JSON format based on the predefined schema. It then analyzes the zoning constraints and modifies the model accordingly. For instance, an initial iteration may generate a building occupying the entire site, but a subsequent update reduces the footprint to comply with the required site occupation ratio and adds additional levels to meet gross floor area requirements. If conflicts arise, such as a scenario where compliance with one constraint (e.g., maximum building height) would lead to a violation of another (e.g., lot coverage limit), ChatGPT returns an error message and prevents further processing.</p>
+                    <p data-key="solutionText">Once the final JSON representation is generated, the structured data is returned via the Flask-based backend to the C# application. The C# application then processes the JSON data and utilizes the Revit API to generate the corresponding BIM elements. </p>
+                </div>
 
-            <div class="story-section">
-                <h2 data-key="features">Key Features</h2>
-                <ul class="features-list">
-                    <li data-key="feature1">Real-time translation of BIM elements</li>
-                    <li data-key="feature2">Multi-language support</li>
-                    <li data-key="feature3">Preservation of original data structure</li>
-                    <li data-key="feature4">Customizable translation rules</li>
-                    <li data-key="feature5">Integration with major BIM platforms</li>
-                </ul>
-            </div>
+                <div class="story-section">
+                    <h2 data-key="experiment">Experiment</h2>
+                    <p data-key="experimentText">To validate the proposed approach, an experiment was conducted using a site located in New York. The address "158 3rd Ave, Gowanus, Brooklyn, NY 11217" was inputted into GUI. It generated the boundary lines of the land lot in the BIM software. Following this step, a prompt was entered for the model generation: "I want to design a 60,000 square feet apartment with a glass façade and flat roof. The first floor should be double height." As a result, the system generated a 166 feet by 100 feet, 14-story apartment building featuring a double-height ground floor, a glazing façade, and a flat roof. The building footprint covered 65.5% of the lot and the total height is 140 feet. Starting from level 7, the facade was set back 20 feet (Figure 3).</p>
+                    <div class="model-showcase" style="margin: 2rem 0;">
+                        <img src="./images/20241229_Generated Models_1.jpg" alt="Generated Building Model" class="workflow-image" style="width: 80%; max-width: 800px; margin: 0 auto; display: block;">
+                        <p style="text-align: center; margin-top: 1rem; font-style: italic;">Figure 3. Generated Building Model.</p>
+                    </div>
+                </div>
 
-            <div class="story-section">
-                <h2 data-key="impact">Impact</h2>
-                <p data-key="impactText">LingoBIM has significantly improved communication efficiency in international construction projects, reducing errors and saving time in the BIM workflow. It has been successfully implemented in several large-scale projects across different countries.</p>
-            </div>
+                <div class="story-section">
+                    <h2 data-key="discussion">Discussion</h2>
+                    <p data-key="discussionText">The results of the experiment demonstrate that the proposed method successfully implemented an apartment design workflow. The generated models accurately align with user descriptions and zoning regulations. For example, the building complies with the maximum height limit of 145 feet, the maximum lot coverage of 83%, and maintains a front wall setback of 20 feet above a height of 60 feet. The entire process takes 3.5 minutes, which is significantly faster than conventional human-driven design workflows. By comparison with the regulations of the project site, the generated apartment model aligned with the zoning code. The AI-generated Revit model conforms to standard Revit object classification, with all components retaining their expected attributes, ensuring structural and semantic consistency. The models can be exported to DWG and IFC formats for further edition and collaboration. This approach meets daily design needs and offers benefits to design firms and training-resource-constrained regions, providing an accessible and affordable way of utilizing BIM for simple apartment designs. To further contextualize the reliability of LLM-generated designs, future work could incorporate evaluations based on established frameworks for automated code compliance, such as rule-based BIM validation (Eastman et al. 2009), to ensure robustness and accuracy in regulatory adherence.</p>
+                    <p data-key="discussionText">However, certain limitations were observed. The site boundary generation occasionally caused system crashes, indicating the need for further refinement in the modeling logic. Additionally, due to the pre-set reading range limitations in the backend, ChatGPT only analyzes certain regulations, potentially affecting the accuracy in more complex scenarios. Furthermore, compared to human-designed models, the apartment generated by the current prototype remains largely objective, lacking subjective approaches such as aesthetic considerations and integration of local context. Finally, the prototype is limited to apartment design, as the predefined JSON schema is specifically aligned with apartment design requirements. To enable the prototype to accommodate a broader range of architectural designs (e.g., offices, schools), either additional JSON schemas must be developed, or a more advanced, adaptable JSON schema is required.</p>
+                </div>
 
-            <div class="story-section">
-                <h2 data-key="references">References</h2>
-                <ul class="references-list">
-                    <li>Alavi, H., Gordo-Gregorio, P., Forcada, N., Bayramova, A., and Edwards, D. J. (2024). AI-Driven BIM Integration for Optimizing Healthcare Facility Design, Buildings 2024.</li>
-                    <li>Du, C., Esser, S., Nousias, S., Borrmann, A. (2024). Text2BIM: Generating Building Models Using a Large Language Model-based Multi-Agent Framework, arXiv:2408.08054v1.</li>
-                    <li>Eastman, C., Lee, J., Jeong, Y., and Lee, J. K. (2009). Automatic rule-based checking of building designs, Automation in Construction, 18(8), 1011-1033.</li>
-                    <li>Eloundou, T., Manning, S., Mishkin, P., and Rock, D. (2023). GPTs are GPTs: An Early Look at the Labor Market Impact Potential of Large Language Models, arXiv:2303.10130.</li>
-                    <li>Fuchs, S., Witbrock, M., Dimyadi, J., Amor, R. (2023). Using Large Language Models for the Interpretation of Building Regulations, Project and Production Management.</li>
-                    <li>Muhammad, I., Ying, K., Nithish, M., Xin, J., Xinge, Z., Cheah, C.C. (2021). Robot-assisted object detection for construction automation: data and information-driven approach. IEEE ASME Trans. Mechatron.</li>
-                    <li>Pauwels, P., Zhang, S., and Lee, Y. C. (2017). Semantic Web Technologies in AEC Industry: A Literature Review, Automation in Construction, 73, 145-165.</li>
-                    <li>Yin, M., Tang, L., Webster, C., Xu, S., Li, X., and Ying, H. (2023). An Ontology-Aided, Natural Language-Based Approach for Multi-Constraint BIM Model Querying, arXiv:2303.15116.</li>
-                </ul>
-            </div>
+                <!-- <div class="story-section">
+                    <h2 data-key="features">Key Features</h2>
+                    <ul class="features-list">
+                        <li data-key="feature1">Real-time translation of BIM elements</li>
+                        <li data-key="feature2">Multi-language support</li>
+                        <li data-key="feature3">Preservation of original data structure</li>
+                        <li data-key="feature4">Customizable translation rules</li>
+                        <li data-key="feature5">Integration with major BIM platforms</li>
+                    </ul>
+                </div>
 
-            <div class="story-section">
-                <h2 data-key="demo">Project Demo</h2>
-                <div class="video-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/KHmqNCpCqMI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="story-section">
+                    <h2 data-key="impact">Impact</h2>
+                    <p data-key="impactText">LingoBIM has significantly improved communication efficiency in international construction projects, reducing errors and saving time in the BIM workflow. It has been successfully implemented in several large-scale projects across different countries.</p>
+                </div> -->
+
+                <div class="story-section">
+                    <h2 data-key="references">References</h2>
+                    <ul class="references-list">
+                        <li>Alavi, H., Gordo-Gregorio, P., Forcada, N., Bayramova, A., and Edwards, D. J. (2024). AI-Driven BIM Integration for Optimizing Healthcare Facility Design, Buildings 2024.</li>
+                        <li>Du, C., Esser, S., Nousias, S., Borrmann, A. (2024). Text2BIM: Generating Building Models Using a Large Language Model-based Multi-Agent Framework, arXiv:2408.08054v1.</li>
+                        <li>Eastman, C., Lee, J., Jeong, Y., and Lee, J. K. (2009). Automatic rule-based checking of building designs, Automation in Construction, 18(8), 1011-1033.</li>
+                        <li>Eloundou, T., Manning, S., Mishkin, P., and Rock, D. (2023). GPTs are GPTs: An Early Look at the Labor Market Impact Potential of Large Language Models, arXiv:2303.10130.</li>
+                        <li>Fuchs, S., Witbrock, M., Dimyadi, J., Amor, R. (2023). Using Large Language Models for the Interpretation of Building Regulations, Project and Production Management.</li>
+                        <li>Muhammad, I., Ying, K., Nithish, M., Xin, J., Xinge, Z., Cheah, C.C. (2021). Robot-assisted object detection for construction automation: data and information-driven approach. IEEE ASME Trans. Mechatron.</li>
+                        <li>Pauwels, P., Zhang, S., and Lee, Y. C. (2017). Semantic Web Technologies in AEC Industry: A Literature Review, Automation in Construction, 73, 145-165.</li>
+                        <li>Yin, M., Tang, L., Webster, C., Xu, S., Li, X., and Ying, H. (2023). An Ontology-Aided, Natural Language-Based Approach for Multi-Constraint BIM Model Querying, arXiv:2303.15116.</li>
+                    </ul>
+                </div>
+
+                <div class="story-section">
+                    <h2 data-key="demo">Project Demo</h2>
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/KHmqNCpCqMI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
         </section>
@@ -207,9 +456,37 @@
     <script src="script.js"></script>
     <script>
         function scrollToContent() {
-            const contentSection = document.getElementById('projectContent');
+            const contentSection = document.querySelector('.tab-navigation');
             contentSection.scrollIntoView({ behavior: 'smooth' });
         }
+
+        // Tab switching functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabButtons = document.querySelectorAll('.tab-button');
+            
+            tabButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Remove active class from all buttons
+                    tabButtons.forEach(btn => {
+                        btn.classList.remove('active');
+                        btn.style.background = 'transparent';
+                        btn.style.color = '#333';
+                    });
+                    
+                    // Add active class to clicked button
+                    button.classList.add('active');
+                    button.style.background = '#333';
+                    button.style.color = 'white';
+                    
+                    // Show corresponding content
+                    const tabId = button.getAttribute('data-tab');
+                    document.querySelectorAll('.tab-content').forEach(content => {
+                        content.classList.remove('active');
+                    });
+                    document.getElementById(`${tabId}-tab`).classList.add('active');
+                });
+            });
+        });
     </script>
 </body>
 </html> 

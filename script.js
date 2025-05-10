@@ -68,23 +68,68 @@ function handleScroll() {
     });
 }
 
-// Animate statistics
+// Function to animate statistics
 function animateStatistics() {
-    const statistics = document.querySelectorAll('.statistic-number:not(.animated)');
-    statistics.forEach(stat => {
-        const target = parseInt(stat.getAttribute('data-target'));
+    const statistics = document.querySelectorAll('.statistic-item');
+    
+    function animateNumber(element, target) {
         let current = 0;
-        const increment = target / 50; // Adjust speed of animation
-        const timer = setInterval(() => {
-            current += increment;
-            if (current >= target) {
-                clearInterval(timer);
-                stat.textContent = target.toLocaleString();
-                stat.classList.add('animated');
+        const duration = 2000; // 2 seconds for each animation
+        const startTime = performance.now();
+
+        function updateNumber(timestamp) {
+            const elapsed = timestamp - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            
+            // Easing function for smoother animation
+            const easeOutQuart = 1 - Math.pow(1 - progress, 4);
+            current = Math.floor(target * easeOutQuart);
+            
+            element.textContent = current.toLocaleString();
+
+            if (progress < 1) {
+                requestAnimationFrame(updateNumber);
             } else {
-                stat.textContent = Math.floor(current).toLocaleString();
+                element.textContent = target.toLocaleString();
             }
-        }, 20);
+        }
+
+        requestAnimationFrame(updateNumber);
+    }
+
+    // Handle scroll events
+    window.addEventListener('scroll', () => {
+        statistics.forEach((stat, index) => {
+            if (stat.getAttribute('data-visible') === 'false') {
+                const rect = stat.getBoundingClientRect();
+                const windowHeight = window.innerHeight;
+                
+                // Trigger animation when the statistic is 75% in view
+                if (rect.top < windowHeight * 0.75) {
+                    stat.setAttribute('data-visible', 'true');
+                    stat.classList.add('visible');
+                    
+                    const numberElement = stat.querySelector('.statistic-number');
+                    const target = parseInt(numberElement.getAttribute('data-target'));
+                    animateNumber(numberElement, target);
+                }
+            }
+        });
+    });
+
+    // Check initial visibility
+    statistics.forEach(stat => {
+        const rect = stat.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+        
+        if (rect.top < windowHeight * 0.75) {
+            stat.setAttribute('data-visible', 'true');
+            stat.classList.add('visible');
+            
+            const numberElement = stat.querySelector('.statistic-number');
+            const target = parseInt(numberElement.getAttribute('data-target'));
+            animateNumber(numberElement, target);
+        }
     });
 }
 
@@ -347,4 +392,5 @@ function initSlideshow() {
 // Initialize slideshow when the page loads
 document.addEventListener('DOMContentLoaded', function() {
     initSlideshow();
+    animateStatistics();
 }); 
